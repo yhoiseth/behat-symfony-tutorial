@@ -2,6 +2,11 @@ default:
     extensions:
         Behat\Symfony2Extension: ~
         Behat\MinkExtension:
+            default_session: chrome
+            base_url: http://localhost:8000/
             sessions:
                 default:
                     symfony2: ~
+                chrome:
+                    selenium2:
+                        browser: chrome

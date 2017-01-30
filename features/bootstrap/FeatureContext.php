@@ -7,7 +7,7 @@ use Behat\Gherkin\Node\TableNode;
 /**
  * Defines application features from the specific context.
  */
-class FeatureContext implements Context
+class FeatureContext extends \Behat\MinkExtension\Context\MinkContext implements Context
 {
     /**
      * Initializes context.
